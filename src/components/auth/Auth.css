@@ -1,0 +1,73 @@
+/* صفحه کل فرم */
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffffff;
+  padding: 20px; /* برای جلوگیری از چسبیدن در موبایل */
+}
+
+/* جعبه فرم */
+.auth-box {
+  width: 100%;
+  max-width: 500px; /* محدودیت برای دسکتاپ */
+  padding: 60px; /* پیش‌فرض */
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+  text-align: center;
+}
+
+/* لوگو */
+.auth-logo {
+  width: 120px;
+  margin-bottom: 25px;
+}
+
+/* ورودی */
+.shadow-input {
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+  border-radius: 8px;
+  height: 45px;
+  font-size: 14px;
+  padding: 0 14px;
+}
+
+/* متن بالای ورودی */
+.auth-text {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* 📱 ریسپانسیو برای موبایل */
+@media (max-width: 768px) {
+  .auth-box {
+    padding: 25px; 
+  }
+
+  .auth-logo {
+    width: 100px; 
+  }
+
+  .shadow-input {
+    font-size: 13px;
+    height: 40px;
+  }
+
+  .auth-text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-box {
+    padding: 20px; /* جمع‌وجورتر برای موبایل خیلی کوچک */
+  }
+
+  .auth-logo {
+    width: 90px;
+  }
+}

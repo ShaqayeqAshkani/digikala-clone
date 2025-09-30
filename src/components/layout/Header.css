@@ -1,0 +1,55 @@
+
+.sub-header-item {
+  cursor: pointer;
+  font-weight: 500;
+  color: #333;
+  position: relative; 
+  padding-bottom: 5px; 
+  transition: color 0.2s;
+}
+
+.sub-header-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #1c90fd;
+  transition: width 0.3s ease;
+}
+
+.sub-header-item:hover::after {
+  width: 100%;
+}
+.main-content {
+  padding-top: 85px; /* برابر ارتفاع هدر */
+}
+
+/* حالت ریسپانسیو برای موبایل */
+@media (max-width: 992px) { /* تبلت و پایین‌تر */
+  .sub-header-item {
+    font-size: 0.8rem;
+    padding-bottom: 3px;
+  }
+}
+
+/* حالت ریسپانسیو برای موبایل کوچک */
+@media (max-width: 576px) {
+  .sub-header-item {
+    font-size: 0.7rem;
+    padding-bottom: 2px;
+  }
+
+  /* نمایش افقی آیتم‌ها به صورت اسکرول */
+  .sub-header-item-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+  }
+
+  .sub-header-item-container::-webkit-scrollbar {
+    display: none; /* مخفی کردن اسکرول */
+  }
+}

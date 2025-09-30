@@ -1,0 +1,119 @@
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: flex;
+  width: 900px;
+  min-height: 450px;
+  background: #fff;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.15);
+  border-radius: 6px;
+  z-index: 1000;
+}
+
+/* سمت راست */
+.menu-right {
+  width: 30%;
+  background: #f9f9f9; /* پس زمینه طوسی روشن */
+  border-left: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  max-height: 450px;
+  overflow-y: auto; /* اسکرول */
+}
+
+/* آیتم‌های دسته */
+.dropdown-item {
+  padding: 12px 16px;
+  cursor: pointer;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.2s;
+}
+
+.dropdown-item:hover,
+.dropdown-item.active {
+  background-color: #f0f0f0;
+  color: #1c90fd;
+}
+
+/* سمت چپ */
+.menu-left {
+ flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #fff;
+  font-size: 14px;
+}
+
+.sub-items {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.sub-item {
+  color: #777; /* کم‌رنگ */
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.sub-item:hover {
+  color: #1c90fd;
+}
+
+.sub-placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+
+.sub-category {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.sub-title {
+  font-weight: 600;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.sub-title-line {
+  display: inline-block;
+  width: 3px;      
+  height: 18px;    
+  background-color: #1c90fd;
+}
+
+
+.sub-categories-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* دو ستون */
+  gap: 20px 40px; /* فاصله بین ردیف و ستون */
+}
+
+.sub-items .sub-item {
+  font-weight: 400;
+  color: #888;
+  cursor: pointer;
+  padding-left: 10px;
+  transition: color 0.2s;
+}
+
+.sub-items .sub-item:hover {
+  color: #1c90fd;
+}
+
+.sub-title:hover {
+  color: #1c90fd; /* رنگ آبی هنگام هاور */
+}
