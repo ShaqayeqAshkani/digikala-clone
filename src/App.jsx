@@ -6,8 +6,9 @@ import AskQuestion from "./pages/AskQuestion";
 import './assets/fonts/fonts.css';
 
 function App() {
-  const basename = process.env.NODE_ENV === "production" ? "/digikala-clone" : "/";
-  
+ 
+  const basename = "/digikala-clone";
+
   return (
     <Router basename={basename}>
       <Routes>
